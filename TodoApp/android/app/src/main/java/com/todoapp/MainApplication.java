@@ -10,6 +10,11 @@ import com.facebook.react.defaults.DefaultReactNativeHost;
 import com.facebook.soloader.SoLoader;
 import java.util.List;
 
+<<<<<<< HEAD
+=======
+import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
+
+>>>>>>> week2
 public class MainApplication extends Application implements ReactApplication {
 
   private final ReactNativeHost mReactNativeHost =
@@ -23,6 +28,10 @@ public class MainApplication extends Application implements ReactApplication {
         protected List<ReactPackage> getPackages() {
           @SuppressWarnings("UnnecessaryLocalVariable")
           List<ReactPackage> packages = new PackageList(this).getPackages();
+<<<<<<< HEAD
+=======
+          packages.add(new SafeAreaContextPackage());
+>>>>>>> week2
           // Packages that cannot be autolinked yet can be added manually here, for example:
           // packages.add(new MyReactNativePackage());
           return packages;

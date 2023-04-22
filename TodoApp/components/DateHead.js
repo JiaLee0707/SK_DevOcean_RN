@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#26a69a',
     },
     block: {
-        padding:16,
+        padding: 15,
         backgroundColor: '#26a69a',
     },
     dateText: {
