@@ -38,15 +38,15 @@ function App() {
         screenOptions={{
           headerShown: false,
         }}
-        drawerContent={({navigation}) => (
-          <SafeAreaView>
-            <Text>A Custom Drawer</Text>
-            <Button
-              onPress={() => navigation.closeDrawer()}
-              title="Drawer 닫기"
-            />
-          </SafeAreaView>
-        )}
+        // drawerContent={({navigation}) => (
+        //   <SafeAreaView>
+        //     <Text>A Custom Drawer</Text>
+        //     <Button
+        //       onPress={() => navigation.closeDrawer()}
+        //       title="Drawer 닫기"
+        //     />
+        //   </SafeAreaView>
+        // )}
         // screenOptions={{
         //   drawerActiveBackgroundColor: '#fb8C00',
         //   drawerActiveTintColor: 'white',
@@ -55,7 +55,7 @@ function App() {
         <Drawer.Screen
           name="Home"
           component={HoneScreen}
-          options={{title: '홈', headerLeft: () => <Text>Lef</Text>}}
+          options={{title: '홈', headerLeft: () => <Text>Left</Text>}}
         />
         <Drawer.Screen
           name="Setting"
