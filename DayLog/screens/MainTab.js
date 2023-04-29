@@ -4,6 +4,7 @@ import FeedsScreen from './FeedsScreen';
 import CalenderScreen from './CalendarScreen';
 import SearchScreen from './SearchScreen';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import SearchHeader from '../components/SearchHeader';
 
 const Tab = createBottomTabNavigator();
 
@@ -22,7 +23,7 @@ function MainTab() {
         }}
       />
       <Tab.Screen
-        name="Caleander"
+        name="달력"
         component={CalenderScreen}
         options={{
           tabBarIcon: ({color, size}) => (
@@ -31,12 +32,13 @@ function MainTab() {
         }}
       />
       <Tab.Screen
-        name="Search"
+        name="검색"
         component={SearchScreen}
         options={{
           tabBarIcon: ({color, size}) => (
             <Icon name="search" size={size} color={color} />
           ),
+          headerTitle: () => <SearchHeader />,
         }}
       />
     </Tab.Navigator>
