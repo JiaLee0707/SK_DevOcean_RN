@@ -5,7 +5,7 @@ import logsStorage from '../storages/logsStorage';
 
 const LogContext = createContext();
 
-export function LiogContextProvider({children}) {
+export function LogContextProvider({children}) {
   const initialLogsRef = useRef(null);
   const [logs, setLogos] = useState([]);
   // Array.from({length: 10})
